@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Index código*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body-total{
+    height:100%;
+    background-color: #eee;
+}
+
+
+.background{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(3, 42, 148, 0.43) );
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: right;
+    text-align: right;
+    padding-top: 3rem;
+    background-color: black;
+    backdrop-filter: blur(10%);
+    z-index: 100;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cabeçalho-link a{
+    font-size:14px;
+    color:white;
+    margin-left:1rem;
+    font-weight:500;
+    border-bottom: 3px solid transparent;
+    position: relative;
+}
+
+.cabeçalho-link a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 247, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.cabeçalho-link a:hover{
+    color: rgb(0, 247, 255);
+    transition: 0.3s all;
+}
+
+.cabeçalho-link a:hover::after{
+    width: 100%;
+}
+.index-img{
+    
+    align-items: center;
+    justify-content:right;
+    gap: 30rem;
+    border-radius: 50%;
+    background-position: center;
+    min-height: 100vh;
+    margin: 70px 0px 300px 180px;
+}
+
+.index-img img{
+position: relative;
+top:0ch;
+display: flex;
+width: 500px;
+height:500px;
+border-radius:50%;
+transition: 0.4s ease-in-out;
+cursor: pointer;
+margin: 10px 100px 200px 700px;
+}
+
+.index-img img:hover{
+    box-shadow: 0 0 25px rgb(0, 247, 255),
+                0 0 50px rgb(0, 247, 255),
+                0 0 100px rgb(0, 247, 255);
+}
+
+.index-img-content{
+    display: flex;
+    flex-direction:column;
+    align-items: right;
+    text-align: right;
+    justify-content:right;
+    margin-top: 2rem;
+}
+
+
+
+.container-text{
+    align-items: right;
+    color:white;
+    padding:0;
+    margin:0px 70px 400px 150px;
+    text-align: justify;
+    position: absolute;
+    top:45%;
+    transform: translateX(-5%), translateY(70%);
+}
+
+.text h3{
+    color: white;
+    font-size: 15px;
+}
+
+.text h1{
+    color:white;
+    margin-top: 10px;
+}
+
+.text span{
+    color:rgb(0, 247, 255);
+}
+
+.p-index{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px;
+    text-align: left;
+}
+
+.logo{
+    height: 50px;
+    width:50px;
+    background: transparent;
+    border:rgb(0, 247, 255) solid 1px;
+    color: rgb(0, 247, 255);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+button{
+    color: rgb(0, 247, 255) ;
+    background: transparent;
+    border: solid 1px rgb(0, 247, 255);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgb(0, 247, 255);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+.redes-sociais a{
+    color: rgb(0, 247, 255);
+    padding:10px;
+    margin-top: 5px;
+}
+
+.h1-index{
+    color: white;
+    top: 10%;
+    text-align: center;
+}
+
+.h1-index span{
+    color: rgb(0, 247, 255);
+}
+.h1-index{
+    margin: 10px 490px 10px 0px;
+}
+.h3-index{
+margin: 10px;
+}
+/*Fim do código index*/
+
+/*Home código*/
+.section-home{
+    height: 730px;
+}
+.body-home{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+   }
+
+   .degrade{
+    width: 100%;
+    padding: 50px 0;
+    
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(70deg,darkblue,rgb(10, 10, 83),rgb(6, 12, 51),rgb(2, 103, 170));
+    background-attachment: fixed;
+    background-size: 500% 100%;
+    animation: gradient 5s infinite alternate
+   }
+
+   @keyframes gradient {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+   .h1text-home{
+    color: white;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    }
+
+    .h1text-home span{
+    color: rgb(0, 247, 255);
+    }
+
+    .h2text-home{
+    font-size: 5e;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+    color: white
+    }
+
+    .h2text-home span{
+        color: aqua;
+        }
+
+section.portfolio-home{
+    padding: 90px 4%;
+}
+
+.img-port-home{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin: 40px;
+    display: inline-block;
+    position:relative;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%,0);
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    padding: 90px 4%;
+    box-shadow: 0 0 40px 10px #ffffff95;
+}
+
+.img-port-home:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b4;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.button-home-back{
+    border-radius: 40px;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    margin: 50px 640px;
+}
+
+.button-home-back{
+    color: rgb(0, 247, 255) ;
+    background: transparent;
+    border: solid 1px rgb(0, 247, 255);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button-home-back:hover{
+    background-color:rgb(0, 247, 255);
+    color: white;
+    transition: 0.5s;
+}
+/*Fim do código home*/
+
+/*About código*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins",sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.body-about{
+    justify-content: center;
+    min-height: 100vh;
+}
+.section-about{
+    background-color: gray;
+    height: 730px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-about{
+    display: inline-block;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    margin: 10px;
+    left: 360px;
+    top: 110px;
+}
+
+.card-about:hover{
+    height:400px ;
+}
+.card-about .img-box-about{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    left: 30px;
+    transition: 0.5s;
+}
+
+.card-about:hover .img-box-about{
+    top: -100px;
+    scale: 0.95;
+}
+
+.card-about .img-box-about img{
+    width: 75%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-about .content-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card-about:hover .content-about{
+    top: 130px;
+    height: 250px;
+}
+
+.card-about .read-more{
+    background:rgba(128, 128, 128, 0.285) ;
+    box-shadow:rgba(0, 0, 0, 0.41) ;
+    border-radius: 16px;
+    height: 30px;
+    border: 2px solid #f5f5f542;
+    color:black;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: all 1s;
+    text-decoration: none;
+}
+.card-about .read-more:hover{
+    background:darkblue;
+    color:white;
+    border-radius: 10px;
+}
+
+.h1-about {
+    margin: 40px 200px 0px 210px;
+    color: white;
+    text-align: center;
+}
+
+.h1-about span{
+    color: aqua;
+}
+
+/*Fim do código about*/
+
+/*Código Contact Me*/
+.section-contact-me01{
+    font-family: sans-serif;
+    position: absolute;
+    z-index: 1
+
+}
+
+.section-contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: transparent;
+    margin: 0px 510px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.degradetwo{
+align-items: center;
+justify-content: center;
+background-image: linear-gradient(70deg,darkblue,rgb(10, 10, 83),rgb(6, 12, 51),rgb(2, 103, 170));
+background-attachment: fixed;
+background-size: 500% 100%;
+animation: gradient 5s infinite alternate
+}
+
+
+
+.section-contact-me h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 20px 0 10px 0 ;
+}
+
+.section-contact-me .form-contact-me{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-contact-me label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.form-contact-me input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.form-contact-me input:focus{
+    border-radius: 16px;
+}
+
+
+.form-contact-me textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    height: 150px;
+}
+
+.form-contact-me textarea:focus{
+    border-radius: 16px;
+}
+.form-contact-me button{
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 10px;
+    height: 30px;
+    text-align: center;
+   
+}
+
+.form-contact-me button:hover{
+    background:#f5f5f5;
+    color:black;
+    border-radius: 16px;
+}
+.btnContact{
+   
+
+    background: transparent;
+    width: 410px;
+    border-radius: 0;
+    height: 30px;
+    border: 2px solid #f5f5f5;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: all 1s;
+   
+}
+
+.btnContact:hover{
+    background:white;
+    color:black;
+    border-radius: 16px;
+}
+
+/*Fim do código contact-me*/
+
+/*Código Thanks*/
+
+.main-thanks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #101026;
+    flex-direction: column;
+}
+
+.texto-thanks{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+
+.paragrafo-thanks{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+
+.btn-thanks{
+    padding: 15px 55px;
+    background:transparent;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.5s;
+    border: 2px solid #f5f5f5;
+    color: white;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.btn-thanks:hover{
+    border-radius: 16px;
+    background:white;
+    color:black;
+}
+
+/*Fim do código thanks*/
+
+/*CÓDIGO: PagServices*/
+.banner{
+    width: 1520px;
+    height: 720px;
+    display: flex;
+    overflow: hidden;
+    
+    z-index: 0;
+   
+}
+.section-services{
+    background-color: #eee;
+}
+.banner .img-services{
+    top: 50px;
+    left: 0;
+    object-fit: cover;
+    
+}
+.content-services{
+    background-color: transparent;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+    margin: 120px 50px 30px 700px;
+    
+}
+.img-services{
+    width: 520px;
+    height: 540px;
+    margin: 150px 0px 0px 1400px;
+    border-radius: 100%;
+}
+.video-services{
+    margin: 0px 0px 0px 680px ;
+    position: absolute;
+    top: 1710px;
+}
+.h1-services{
+    
+    position: absolute;
+    bottom: 610px;
+    color: black bold;
+    width: 300px;
+}
+.paragrafo-services{
+   position: absolute;
+   bottom: 500px;
+   color: black;
+   width: 550px;
+}
+.circle-services{
+    background-color: #bebebed5;
+    top: -700px;
+    left: -700px;
+    height: 900px;
+    width: 900px;
+    border-radius: 100%;
+    margin-left: -510px;
+    margin-top: -80px;
+    box-shadow: black;
+    border-radius: white;
+}
+
+/*Fim do código services*/
+
+/*CÓDIGO: pagwork */
+.section-work{
+    height: 155px;
+}
+
+.Work-section01{
+    background-color: #eee;
+}
+
+.circle01{
+    background-color: #bebebed5;;
+    top: -30px;
+    right: 10px;
+    border-radius: 700px;
+    width: 350px;
+    height: 350px;
+    margin: 2900px 2px 0px 0px;
+    position: absolute;
+    z-index: 0;
+    transition: 0.20s
+}
+.img01-work{
+    height: 275px;
+    margin: -200px 0px 0px 40px;
+    transition: 0.20s
+}
+
+
+.circle01:hover{
+    top: -10px;
+    width: 600px;
+    height: 250px;
+    border-radius:0%;
+    bottom: -250px;
+   
+}
+.circle01:hover .img01-work{
+    height: 190px;
+    top: 0px;
+    margin: -25px 0px 0px 400px;
+    transition: 0.20s;
+}
+
+.h1-texto01{
+    color: black;
+    margin:30px 0px 0px 20px;
+}
+
+.p-paragrafo01{
+    color: black;
+    margin:20px  0px 0px 20px;
+}
+
+.circle01 .h1-texto01{
+    opacity: 0;
+}
+.circle01:hover .h1-texto01{
+opacity: 1;
+}
+
+.circle01 .p-paragrafo01{
+    opacity: 0;
+}
+.circle01:hover .p-paragrafo01{
+opacity: 1;
+}
+
+.video-work{
+    margin: 10px;
+    padding: 15px 0px 0px 20px;
+}
+
+
+.circle02{
+    background-color: rgba(8, 0, 255, 0.222);
+    top: -20px;
+    right: 10px;
+    border-radius: 700px;
+    width: 280px;
+    height: 280px;
+    margin: 3300px 0px 0px 0px;
+    position: absolute;
+    z-index: 0;
+    transition: 0.20s;
+}
+
+.img02-work{
+    width: 240px;
+    position: absolute;
+    z-index: 1;
+    height: 275px;
+    margin: -250px 0px 0px 30px;
+    transition: 0.20s
+}
+
+.circle02:hover{
+    top: 60px;
+    width: 500px;
+    height: 250px;
+    border-radius:0%;
+    bottom: -250px;
+   
+}
+
+.circle02:hover .img02-work{
+    height: 200px;
+    top: 200px;
+    margin: -310px 0px 0px 300px;
+    transition: 0.20s
+}
+
+.h1-texto02{
+    color: black;
+    margin:30px 0px 0px 20px;
+}
+
+.p-paragrafo02{
+    color: black;
+    margin:20px  0px 0px 20px;
+}
+
+.circle02 .h1-texto02{
+    opacity: 0;
+}
+.circle02:hover .h1-texto02{
+opacity: 1;
+}
+
+.circle02 .p-paragrafo02{
+    opacity: 0;
+}
+.circle02:hover .p-paragrafo02{
+opacity: 1;
+}
+
+.circle03{
+    background-color: rgba(255, 0, 247, 0.234);
+    top: -30px;
+    right: 10px;
+    border-radius: 700px;
+    width: 360px;
+    height: 350px;
+    margin: 3210px 510px 0px 0px;
+    position: absolute;
+    z-index: 0;
+    transition: 0.20s;
+}
+
+.img03-work{
+    width: 230px;
+    position: absolute;
+    z-index: 1;
+    height: 230px;
+    margin: -200px 0px 0px 50px;
+    transition: 0.20s;
+    border-radius: 100%;
+}
+
+.circle03:hover{
+    top: 20px;
+    width: 500px;
+    height: 250px;
+    border-radius:0%;
+    bottom: -250px;
+   
+}
+
+.h1-work{
+    margin: 60px 0px 0px 30px;
+    padding: 10px 0px 50px 0px;
+    height: 30px;
+}
+.p-work{
+    margin: 10px 0px 0px 30px;
+    color: black;
+    width: 650px;
+}
+
+.text-work{
+    margin: 10px;
+}
+
+.circle03:hover .img03-work{
+    height: 200px;
+    top: 200px;
+    margin: -320px 0px 0px 300px;
+    transition: 0.20s
+}
+
+.h1-texto03{
+    color: black;
+    margin:30px 0px 0px 20px;
+}
+
+.p-paragrafo03{
+    color: black;
+    margin:20px  0px 0px 20px;
+}
+
+.circle03 .h1-texto03{
+    opacity: 0;
+}
+.circle03:hover .h1-texto03{
+opacity: 1;
+}
+
+.circle03 .p-paragrafo03{
+    opacity: 0;
+}
+.circle03:hover .p-paragrafo03{
+opacity: 1;
+}
+
+/*Fim do código pagwork*/
